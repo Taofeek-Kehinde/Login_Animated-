@@ -104,6 +104,7 @@ const App: React.FC = () => {
     if (boyRef.current) {
       boyRef.current.style.transition = 'none';
       boyRef.current.style.left = '50px';
+      boyRef.current.style.transform = 'translateY(-50%) scaleX(-1)';
     }
     animateBoyExit();
   };
@@ -126,7 +127,7 @@ const App: React.FC = () => {
             <div 
               ref={boyRef} 
               className="boy"
-              style={{ left: '50px' }}
+              style={{ left: '50px', transform: 'translateY(-50%) scaleX(-1)' }}
             ></div>
           </div>
           
